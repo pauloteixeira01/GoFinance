@@ -4,6 +4,7 @@ import { Text, View } from "react-native";
 import {
   StyledContainer,
   StyledHeader,
+  StyledUserWrapper,
   StyledUserInfo,
   StyledPhoto,
   StyledUser,
@@ -15,17 +16,19 @@ const Home = () => {
   return (
     <StyledContainer>
       <StyledHeader>
-        <StyledUserInfo>
-          <StyledPhoto
-            source={{
-              uri: "https://avatars.githubusercontent.com/u/23463866?v=4",
-            }}
-          />
-          <StyledUser>
-            <StyledUserGreeting>Hey!</StyledUserGreeting>
-            <StyledUserName>Paulo Teixeira</StyledUserName>
-          </StyledUser>
-        </StyledUserInfo>
+        <StyledUserWrapper>
+          <StyledUserInfo>
+            <StyledPhoto
+              source={{
+                uri: "https://avatars.githubusercontent.com/u/23463866?v=4",
+              }}
+            />
+            <StyledUser>
+              <StyledUserGreeting>Hey,</StyledUserGreeting>
+              <StyledUserName>Paulo Teixeira</StyledUserName>
+            </StyledUser>
+          </StyledUserInfo>
+        </StyledUserWrapper>
       </StyledHeader>
     </StyledContainer>
   );
