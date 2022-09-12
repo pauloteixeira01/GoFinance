@@ -22,8 +22,8 @@ const Home = () => {
             }}
           />
           <StyledUser>
-            <StyledUserGreeting>StyledUserGreetingo</StyledUserGreeting>
-            <StyledUserName>StyledUserNameo</StyledUserName>
+            <StyledUserGreeting>Hey!</StyledUserGreeting>
+            <StyledUserName>Paulo Teixeira</StyledUserName>
           </StyledUser>
         </StyledUserInfo>
       </StyledHeader>
