@@ -1,5 +1,12 @@
 import styled from "styled-components/native";
 import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
+import { Feather } from "@expo/vector-icons";
+import { AnyStyledComponent } from "styled-components";
+
+const StyledText = styled.Text`
+  color: ${({ theme }) => theme.colors.shape};
+  font-size: ${RFValue(18)}px;
+`;
 
 export const StyledContainer = styled.View`
   flex: 1;
@@ -13,6 +20,14 @@ export const StyledHeader = styled.View`
   justify-content: center;
   align-items: center;
   flex-direction: row;
+`;
+
+export const StyledUserWrapper = styled.View`
+  width: 100%;
+  padding: 0px 24px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 export const StyledUserInfo = styled.View`
@@ -30,10 +45,15 @@ export const StyledUser = styled.View`
   margin-left: 17px;
 `;
 
-export const StyledUserGreeting = styled.Text`
-  color: ${({ theme }) => theme.colors.shape};
-  font-size: ${RFValue(18)}PX;
+export const StyledUserGreeting = styled(StyledText)`
+  font-family: ${({ theme }) => theme.fonts.regular};
+`;
+
+export const StyledUserName = styled(StyledText)`
   font-family: ${({ theme }) => theme.fonts.bold};
 `;
 
-export const StyledUserName = styled.Text``;
+export const StyledIcon = styled(Feather as unknown as AnyStyledComponent)`
+  color: ${({ theme }) => theme.colors.secondary};
+  font-size: ${RFValue(24)}px;
+`;
