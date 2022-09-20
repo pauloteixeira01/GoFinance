@@ -36,8 +36,8 @@ export const StyledUserInfo = styled.View`
 `;
 
 export const StyledPhoto = styled.Image`
-  width: ${RFValue(55)}px;
-  height: ${RFValue(55)}px;
+  width: ${RFValue(48)}px;
+  height: ${RFValue(48)}px;
   border-radius: 10px;
 `;
 
