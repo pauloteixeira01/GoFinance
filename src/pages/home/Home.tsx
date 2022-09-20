@@ -1,5 +1,4 @@
 import React from "react";
-import { Text, View } from "react-native";
 
 import {
   StyledContainer,
@@ -10,6 +9,7 @@ import {
   StyledUser,
   StyledUserGreeting,
   StyledUserName,
+  StyledIcon,
 } from "./styles";
 
 const Home = () => {
@@ -28,6 +28,7 @@ const Home = () => {
               <StyledUserName>Paulo Teixeira</StyledUserName>
             </StyledUser>
           </StyledUserInfo>
+          <StyledIcon name="power" />
         </StyledUserWrapper>
       </StyledHeader>
     </StyledContainer>
